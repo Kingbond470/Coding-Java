@@ -18,6 +18,7 @@ public class Solution {
     public static void main(String[] args) {
         int N = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        /*
         if (N%2==0){
             if(N>=2 && N<=5){
                 System.out.println("Not Weird");
@@ -32,6 +33,9 @@ public class Solution {
         else{
             System.out.println("Weird");
         }
+        */
+         String result=(N%2==0 && (N>=6 && N<=20)  || N%2==1) ? "Weird" : "Not Weird";
+        System.out.println(result);
 
         scanner.close();
     }
