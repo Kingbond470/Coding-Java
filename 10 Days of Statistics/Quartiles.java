@@ -1,3 +1,6 @@
+/*
+https://www.hackerrank.com/challenges/s10-quartiles/problem
+*/
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -24,20 +27,50 @@ class Result {
 // retrive the list and sort it. then find the length and for odd ... divide the length and find the integer value form it, middle quartile is middle value and for left .... make find the lenght and add the value near to suppose, 4 element then (1+2)/2 ..... divide the length by 2 and store in variable and subtract one index and add them and divide by 2.........asame goes for right array
 // if lenght is even then do the same for left and right array and for middle quartile simple find the middle -1 and middle .. add them and divide by 2 and you got it.... now return all the values.
     int n=arr.size();
-    Collections.sort();
-    if n%2 !=0 {
-        int middle=n//2;
-        int q2=arr.get(middle);
-        System.out.println(q2);
+    Collections.sort(arr);
+    int q1=0,q2=0,q3=0;
+    if (n%2 !=0) {
+        int middle=n/2;
+        q2=arr.get(middle);
+        
         int new_left_middle=middle/2;
-        int q1=(arr.get(new_left_middle)+arr.get(new_left_middle-1))//2;
+        q1=(arr.get(new_left_middle)+arr.get(new_left_middle-1))/2;
+        //System.out.println(q1);
+        //System.out.println(q2);
         int new_right_middle=middle+new_left_middle;
-        int q3=(arr.get(new_right_middle)+arr.get(new_right_middle+1))//2;
+        q3=(arr.get(new_right_middle)+arr.get(new_right_middle+1))/2;
+        //System.out.println(q3);
     }
     else{
-        
+        int middle=n/2;
+        System.out.println(middle);
+        q2=(arr.get(middle)+arr.get(middle-1))/2;
+        if (middle%2==1){
+           int new_left_middle=middle/2;
+           System.out.println(new_left_middle);
+            q1=arr.get(new_left_middle);
+            q3=arr.get(middle+new_left_middle);
+        }
+        else{
+            int new_right_middle=middle/2;
+            q1=(arr.get(new_right_middle)+arr.get(new_right_middle-1))/2;
+            q3=(arr.get(middle+new_right_middle)+arr.get(middle+new_right_middle-1))/2;
+            }
+        //System.out.println(q2);
+        /*
+        int new_left_middle=middle/2;
+        q1=(arr.get(new_left_middle))+arr.get(new_left_middle-1)/2;
+        int new_right_middle=middle+new_left_middle;
+        q3=(arr.get(new_right_middle)+arr.get(new_right_middle+1))/2;
+        */
+        /*
+        int left_middle=middle/2;
+        q1=(arr.get(left_middle)+arr.get(left_middle-1))/2;
+        int right_middle=middle+left_middle;
+        q3=(arr.get(right_middle)+arr.get(right_middle-1))/2;
+        */
     }
-    return arr;
+    return Arrays.asList(q1,q2,q3);
     }
 
 }
