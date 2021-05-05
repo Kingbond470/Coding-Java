@@ -10,7 +10,7 @@ public class Solution {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         // the product of defect is 1/3 so p =1/3 and q=1-p and use the formula g(n,p)=q^(n-1)*p
         
-        double p=0.33333333333  ;    // 1/3
+        double p=0.33333333333  ;    // (double)1/3 using type casting
         //System.out.println(p);
         double q=1-p;
         int n=5;
