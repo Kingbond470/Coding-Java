@@ -1,0 +1,108 @@
+//You are given two matrices (2D array). The first array A (n rows and m columns) and second array B (i rows and j columns).
+//Output sum of the matrix which is greater than the sum of other matrix.
+
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    // first matrix
+    int sumOfA=0;
+    int n=sc.nextInt();
+    int m=sc.nextInt();
+    sc.nextLine();
+    int[][] A=new int[n][m];
+    for(int a=0; a<n;a++){
+      for(int b=0; b<m; b++){
+        A[a][b]=sc.nextInt();		//i can also add the element here and comapre later rather using two more loop
+    	
+      }
+    }
+    
+    sc.nextLine();
+    // second matrix
+     int sumOfB=0;
+    int i=sc.nextInt();
+    int j=sc.nextInt();
+    sc.nextLine();
+    int[] [] B=new int[i][j];
+    for(int k=0; k<i; k++){
+      for(int l=0; l<j; l++){
+        B[k][l]=sc.nextInt();
+         
+      }
+    }
+ 
+ // first matrix sum
+    int sumOfA=0;
+    for(int a=0; a<n; a++){
+      for(int b=0; b<m; b++){
+        sumOfA=sumOfA+A[a][b];
+      }
+    }
+    
+    //second matrix sum
+    int sumOfB=0;
+    for(int k=0; k<i; k++){
+      for(int l=0; l<j; l++){
+        sumOfB=sumOfB+B[k][l];
+      }
+    }
+    
+      if(sumOfA>sumOfB){
+      System.out.println(sumOfA);
+    }
+    else{
+      System.out.println(sumOfB);
+    }
+    
+    }
+    }
+    
+    /*
+    Other Solution 
+    //You are given two matrices (2D array). The first array A (n rows and m columns) and second array B (i rows and j columns).
+//Output sum of the matrix which is greater than the sum of other matrix.
+
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    // first matrix
+    int sumOfA=0;
+    int n=sc.nextInt();
+    int m=sc.nextInt();
+    sc.nextLine();
+    int[][] A=new int[n][m];
+    for(int a=0; a<n;a++){
+      for(int b=0; b<m; b++){
+        A[a][b]=sc.nextInt();		//i can also add the element here and comapre later rather using two more loop
+    	 sumOfA=sumOfA+A[a][b];
+      }
+    }
+    
+    sc.nextLine();
+    // second matrix
+     int sumOfB=0;
+    int i=sc.nextInt();
+    int j=sc.nextInt();
+    sc.nextLine();
+    int[] [] B=new int[i][j];
+    for(int k=0; k<i; k++){
+      for(int l=0; l<j; l++){
+        B[k][l]=sc.nextInt();
+        sumOfB=sumOfB+B[k][l];		// calculating sum here only
+         
+      }
+    }
+    
+      if(sumOfA>sumOfB){
+      System.out.println(sumOfA);
+    }
+    else{
+      System.out.println(sumOfB);
+    }
+    
+    }
+ }
+    */
+    
