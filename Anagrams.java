@@ -137,3 +137,101 @@ public class Solution {
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
     }
 }
+
+
+
+/* 
+Another Mehthod -2
+//Enter code here
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    String word=sc.nextLine();
+    String phrase=sc.nextLine();
+    String result="";
+    String result1="";
+    //boolean value=false;
+    for(int i=0; i<word.length(); i++){
+      if(word.charAt(i) !=' '){
+        result=result+word.charAt(i);
+      }
+      }
+    for(int i=0; i<phrase.length(); i++){
+      if(phrase.charAt(i) !=' '){
+        result1=result1+phrase.charAt(i);
+      }
+    }
+    
+    char[] first_word=new char[result.length()];
+    char[] second_word=new char[result1.length()];
+    
+    for(int i=0; i<result.length(); i++){
+      first_word[i]=result.charAt(i);
+    }
+    for(int j=0; j<second_word.length; j++){
+      second_word[j]=result1.charAt(j);
+    }
+    //Arrays.sort(first_word);
+  //  Arrays.sort(second_word);
+    boolean value=true;
+    for(int i=0; i<first_word.length; i++){
+      for(int j=0; j<second_word.length; j++){
+        if(first_word.charAt(i) != second_word.charAt(i)){
+          value=false;
+        }
+      }
+    }
+    
+  //System.out.println(result+" " +result1);
+      String name= Arrays.equals(first_word,second_word) ? "True" : "False";
+      System.out.println(name);
+         }
+         }
+         */
+
+
+/* 
+Anothear Method
+//Enter code here
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    String word=sc.nextLine();
+    String phrase=sc.nextLine();
+    String result="";
+    String result1="";
+    //boolean value=false;
+    for(int i=0; i<word.length(); i++){
+      if(word.charAt(i) !=' '){
+        result=result+word.charAt(i);
+      }
+      }
+    for(int i=0; i<phrase.length(); i++){
+      if(phrase.charAt(i) !=' '){
+        result1=result1+phrase.charAt(i);
+      }
+    }
+    
+    char[] first_word=new char[result.length()];
+    char[] second_word=new char[result1.length()];
+    
+    for(int i=0; i<result.length(); i++){
+      first_word[i]=result.charAt(i);
+    }
+    for(int j=0; j<second_word.length; j++){
+      second_word[j]=result1.charAt(j);
+    }
+    Arrays.sort(first_word);
+    Arrays.sort(second_word);
+    
+  //System.out.println(result+" " +result1);
+      String name= Arrays.equals(first_word,second_word) ? "True" : "False";
+      System.out.println(name);
+         }
+         }
+         
+         */
