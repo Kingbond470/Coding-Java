@@ -1,0 +1,47 @@
+When a string is being created or displayed, its text must be enclosed within double quotation marks to indicate the beginning and end of the string.
+These quotation marks are not displayed, which brings up a good question: What if you want to display double quotation marks?
+
+To display them, Java has created a special code that can be put into a string: \". Whenever this code is encountered in a string, it is replaced with a double quotation mark. For example, examine the following:
+
+System.out.println("Jane Campion directed \"The Piano\" in 1993.");
+
+This code is displayed as the following:
+
+Jane Campion directed "The Piano" in 1993.
+
+You can insert several special characters into a string in this manner. The following list shows these special characters; note that each is preceded by a backslash (\).
+
+
+
+Special characters            Display
+------------------      ----------------------
+
+      \'                Single quotation mark
+
+      \"                Double quotation mark
+
+      \\                Backslash
+
+      \t                Tab
+
+      \b                Backspace
+
+      \r                Carriage return
+
+      \f                Formfeed
+
+      \n                Newline
+      
+      
+      
+
+The newline character causes the text following the newline character to be displayed at the beginning of the next line. Look at this example:
+
+
+System.out.println("Music by\nMichael Nyman");
+
+This statement would be displayed as the following:
+
+
+Music by
+Michael Nyman
