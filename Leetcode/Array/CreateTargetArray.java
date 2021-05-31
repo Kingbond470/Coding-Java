@@ -101,3 +101,23 @@ for(int a: new_arr){
     }
 }
 
+
+/*
+class Solution {
+    public int[] createTargetArray(int[] nums, int[] index) {
+        ArrayList<Integer> list=new ArrayList<>();
+        for(int i=0; i<nums.length; i++){
+            int index_no=index[i];
+            int nums_value=nums[i];
+            list.add(index_no,nums_value);
+        }
+        int[] new_list=new int[nums.length];
+        for(int i=0; i<list.size(); i++){
+           // System.out.print();
+            new_list[i]=list.get(i);
+        }
+        
+        return new_list;
+    }
+}
+*/
