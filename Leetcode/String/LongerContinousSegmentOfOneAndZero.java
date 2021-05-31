@@ -55,3 +55,33 @@ class Solution {
 
     }
 }
+
+
+//Another solution
+/*
+class Solution {
+    
+    public static boolean checkZeroOnes(String s) {
+       int one=0;
+        int zero=0;
+        int max_one=0; 
+        int max_zero=0;
+        
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)=='1'){
+                one++;
+                zero=0;
+            }
+            
+            if(s.charAt(i)=='0'){
+                zero++;
+                one=0;
+            }
+            
+            if(one>max_one) max_one=one;
+            if(zero>max_zero) max_zero=zero;
+        }
+        return max_one>max_zero;
+    }
+}
+*/
