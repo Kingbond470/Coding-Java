@@ -1,4 +1,6 @@
 /*
+https://oj.masaischool.com/contest/1048/problem/4
+
 Longest Repeated Odd
 
 Description
