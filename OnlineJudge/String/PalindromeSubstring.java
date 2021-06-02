@@ -1,4 +1,40 @@
 /*
+
+https://oj.masaischool.com/contest/1048/problem/3
+
+Description
+
+You are provided a string S. Write a program that returns length of the longest palindromic substring of that string.
+
+Input
+
+Input Format
+
+You are provided with a string
+
+Constraints
+
+Length of string < 100
+
+Output
+
+Output Format
+
+Output one number which is length of the longest substring which is a palindrome
+
+Sample Input 1
+
+thisracecarisgood
+
+Sample Output 1
+
+7
+
+Hint
+
+Sample 1 Explanation
+
+
 Masai Palindromic Substring-Editorial
 
 Difficulty: Low
