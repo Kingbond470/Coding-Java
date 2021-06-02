@@ -13,6 +13,7 @@ public class Solution {
         
         Regex_Test tester = new Regex_Test();
         tester.checker("^[\\d]{1,2}[a-zA-z]{3,}[\\.]{0,3}$"); // Use \\ instead of using \ 
+        // d for digits, a-z lowercase and A-Z uppercase,\\. for point ^ for start, $ for end
     
     }
 }
