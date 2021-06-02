@@ -1,4 +1,6 @@
 /*
+https://oj.masaischool.com/contest/1048/problem/2
+
 Substring under condition
 
 Description
