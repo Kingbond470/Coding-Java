@@ -67,4 +67,30 @@ public class Main{
     }
   }
 }
-        
+/*
+public class Main {
+    public static void main(String args[]) {
+      //  System.out.println("Hello World!");
+      Scanner sc=new Scanner(System.in);
+    //   int n=sc.nextInt();
+    //   int[] arr=new int[n];
+    //   for(int i=0; i<n; i++){
+    //       arr[i]=sc.nextInt();
+    //   }
+    int n=5;
+    arr[5]={1,2,3,4,5};
+
+    //int k=sc.nextInt();
+    int k=3;
+    if(k>n){
+        k=k%n;
+    }
+    System.out.println("The array after k rotation");
+    for(int i=0; i<n; i++){
+        int new_index=(n+i-k)%n;
+        System.out.print(arr[new_index]+" ");
+    }
+
+    }
+}*/
+//Not correct yet
