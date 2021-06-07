@@ -1,7 +1,16 @@
 /*
 https://leetcode.com/problems/xor-operation-in-an-array/
+
+[XOR Operation](https://www.codechef.com/problems/XORSN)
+
+/*xor operation between a and b can be find using two ways
+
+first way ------->
+xor_value= ( a | b ) - ( a & b ) which is difference between bitwise or and and operation
+
+second way --->
+xor_value= a^b
 */
-//xor operation between a and b can be fine using , xor_value= ( a | b ) - ( a & b ) which is difference between bitwise or and and operation
 class Solution {
     public int xorOperation(int n, int start) {
         int[] nums=new int[n];
