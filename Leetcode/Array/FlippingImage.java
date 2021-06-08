@@ -25,3 +25,22 @@ class Solution {
         return new_arr;
     }
 }
+
+
+//Another Approach
+class Solution {
+    public int[][] flipAndInvertImage(int[][] arr) {
+        int[][] new_arr=new int[arr.length][arr.length];
+        for(int i=0; i<arr.length; i++){
+            int[] index_row=new int[arr.length];
+            for(int j=arr.length-1,k=0; j>=0; j--){
+                if(arr[i][j]==0){
+                    index_row[k]=1;
+                }
+                k++;
+            }
+            new_arr[i]=index_row;
+        }
+        return new_arr;
+    }
+}
