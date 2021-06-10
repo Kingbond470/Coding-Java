@@ -63,7 +63,21 @@ class Solution {
         return (firstsum+secondsum)==targetsum;
         
     }
+}
+
+
+//Another 0 ms approach
+class Solution {
+    public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
+        return (wordIntValue(firstWord)+wordIntValue(secondWord))==wordIntValue(targetWord);
+    }
     
-    
+    public int wordIntValue(String word){
+        int result=0;
+        for(int i=0; i<word.length(); i++){
+            result=result*10+(word.charAt(i)-'a');
+        }
+        return result;
+    }
    
 }
