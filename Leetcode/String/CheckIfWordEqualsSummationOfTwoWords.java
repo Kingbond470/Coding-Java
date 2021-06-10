@@ -38,3 +38,32 @@ class Solution {
         return value;
     }
 }
+
+
+//0 ms Approach
+class Solution {
+    public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
+        int firstsum=0, secondsum=0, targetsum=0;
+        
+        for(char ch: firstWord.toCharArray()){
+            firstsum=firstsum+ch-'a';
+            firstsum=firstsum*10;
+        }
+        
+        for(char ch:secondWord.toCharArray()){
+            secondsum=secondsum+ch-'a';
+            secondsum=secondsum*10;
+        }
+        
+        for(char ch:targetWord.toCharArray()){
+            targetsum=targetsum+ch-'a';
+            targetsum=targetsum*10;
+        }
+        
+        return (firstsum+secondsum)==targetsum;
+        
+    }
+    
+    
+   
+}
