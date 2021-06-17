@@ -10,13 +10,18 @@ public class Main{
    for(int i=0; i<str.length(); i++){
        char new_char=str.charAt(i);
        int value=(int)new_char+k;
+       System.out.println(value);
       while(value>122){
           
  value=value%122;
+ if(value==0) value=value+97;
+ else {
  value=value+96;
-// System.out.print(value+" ");
+ }
+ System.out.print(value+" ");
       
       }
+      System.out.println();
 //        if(value>122){
 // value=value%122;
 // value=value+96;
@@ -28,10 +33,3 @@ public class Main{
    System.out.println(result);
   }
 }
-
-/*
-3
-abz
-2
-ans - cdb
-*/
