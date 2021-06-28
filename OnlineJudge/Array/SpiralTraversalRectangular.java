@@ -1,4 +1,5 @@
-//Enter code here
+//https://oj.masaischool.com/contest/1204/problem/4
+
 import java.util.Scanner;
 public class Main{
   public static void main(String[] args){
