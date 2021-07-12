@@ -34,15 +34,9 @@ public class Main {
             String arr = arr1.toUpperCase(Locale.ROOT);
             long sum = 0;
             for (int i = 0; i < arr.length(); i++) {
-
-//                if (arr.charAt(i) >= 'A' && arr.charAt(i) <= 'Z') {
-//                    if (i > 0) {
-//                        sum1 = 25 * (arr.charAt(i - 1) - 'A' + 1);
-//                    }
                     sum= sum*26;
                     sum = sum + (arr.charAt(i)) -64;
                 }
-//            }
             System.out.println(sum);
             test--;
         }
