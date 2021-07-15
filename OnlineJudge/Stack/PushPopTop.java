@@ -1,3 +1,4 @@
+// https://oj.masaischool.com/contest/1414/problem/1
 import java.util.Scanner;
 import java.util.Stack;
 public class Main{
