@@ -26,13 +26,10 @@ public class Main{
 // Another approach
 /*
 import java.util.Scanner;
-import java.util.Stack;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        Stack<Integer> stack = new Stack<Integer>();
         int top = -1;
         int[] arr = new int[10];
         for(int a=0; a<t; a++){
