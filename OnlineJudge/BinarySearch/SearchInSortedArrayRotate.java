@@ -27,3 +27,36 @@ public class Main{
    // return idx;
  // }
 }
+
+
+// Using Binary Search
+import java.util.Scanner;
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int key=sc.nextInt();
+    int[] arr=new int[n];
+    for(int i=0; i<n; i++) arr[i]=sc.nextInt();
+    
+    int low=0, high=n-1, idx=-1;
+    while(low<=high){
+     int mid=low+(high-low)/2;
+      if(arr[mid]==key) {
+        idx=mid;
+        break;
+      }
+      else if(arr[mid]<=arr[high]){
+        if(key>arr[mid] && key<=arr[high]) low=mid+1;
+        else high=mid-1;
+      }
+      else{
+        if(key>=arr[low] && key<arr[mid]) high=mid-1;
+        else low=mid+1;
+      }
+    }
+    
+    System.out.println(idx);
+  }
+}
